@@ -1,0 +1,105 @@
+:root {
+  --width: var(--settings-size-width)px;
+  --height: var(--settings-size-height)px;
+
+  --space: 20px;
+}
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  user-select: none;
+}
+
+body {
+  background-color: var(--content-bgcolor);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fullscreen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--width);
+  height: var(--height);
+}
+
+.border {
+  border: 1px solid #000000;
+
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  width: var(--width);
+  height: var(--height);
+}
+
+.content {
+  opacity: 0;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.title {
+  position: absolute;
+  top: var(--space);
+  left: var(--space);
+  font-family: OpenSansBold, sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.mainExit {
+  cursor: pointer;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 30px;
+}
+
+.cta {
+  position: absolute;
+  bottom: var(--space);
+  right: var(--space);
+  width: 100px;
+  height: 30px;
+  font-family: OpenSans, sans-serif;
+  overflow: hidden;
+  will-change: transform;
+  background-color: white;
+  .cta_copy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    padding: 5px 5px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+    font-weight: bold;
+    color: black;
+  }
+}
+
+

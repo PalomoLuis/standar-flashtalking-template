@@ -1,0 +1,13 @@
+{
+  "parent": "../shared/.sharedrc",
+  "settings": {
+    "size": {
+      "width": 300,
+      "height": 600
+    },
+    "entry": {}
+  },
+  "content": {
+    "css": "./css/style.css"
+  }
+}

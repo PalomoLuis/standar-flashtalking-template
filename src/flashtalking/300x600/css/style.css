@@ -1,0 +1,12 @@
+@import url('../../shared/css/style.css');
+:root {
+  --width: var(--settings-size-width)px;
+  --height: var(--settings-size-height)px;
+
+  --space: 24px;
+}
+
+.bg {
+  width: unset;
+  height: 100%;
+}
